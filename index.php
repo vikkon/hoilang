@@ -465,7 +465,8 @@ footer a .fa-lg {
         }
     };
         
-        $("#submit").click(function(){
+        $("#submit").click(function(e){
+            e.preventDefault();
             $('#survey-form').each(function(){
                 valuesToSend = $(this).serialize();
                 $.ajax($(this).attr('action'),
