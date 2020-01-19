@@ -500,6 +500,7 @@ footer a .fa-lg {
               </div>
               <div class="row">
                   <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Gửi</button>
+                  <a href="http://myfsoftgame.com/exit" class="btn waves-effect waves-lighten-5">Gửi</button>
                 </div>
               </div>
             </form>
