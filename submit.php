@@ -28,6 +28,13 @@ if(isset($_POST['data'])) {
       
       if(isset($data['token']) && $data['token'] != '') {
             $token = $data['token'];
+            $sql_select = "SELECT id FROM survey where token=".$token;
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+                  return 3;
+                  die;
+            }
+            
             unset($data['token']);
             $time = time();
             
@@ -37,6 +44,7 @@ if(isset($_POST['data'])) {
             $space_stage = isset($data['space-stage']) ? $data['space-stage'] : '';
             $duration_program = isset($data['duration-program']) ? $data['duration-program'] : '';
             $quality_lunching = isset($data['quality-lunching']) ? $data['quality-lunching'] : '';
+            $quality_btc = isset($data['quality-btc']) ? $data['quality-btc'] : '';
             $like_thing = isset($data['like_thing']) ? $data['like_thing'] : '';
             $channel_resource = isset($data['channel-resource']) ? $data['channel-resource'] : '';
             $channel_resource_other = isset($data['channel-resource-other']) ? $data['channel-resource-other'] : '';
@@ -47,8 +55,8 @@ if(isset($_POST['data'])) {
             die;
       }
       
-      $sql = "INSERT INTO survey (token, qualityStore, qualityStage, spaceStage, durationProgram, qualityLunching, likeThing, channelResource, channelResourceOther, improveThing, created_at) 
-                        VALUES ($token, $quality_store, $quality_stage,  $space_stage,  $duration_program,  $quality_lunching,  $like_thing,  $channel_resource,  $channel_resource_other, $improve_thing, $time)";
+      $sql = "INSERT INTO survey (token, overall, qualityStore, qualityStage, spaceStage, durationProgram, qualityLunching, qualityBtc, likeThing, channelResource, channelResourceOther, improveThing, created_at) 
+                        VALUES ($token, $overall, $quality_store, $quality_stage,  $space_stage,  $duration_program,  $quality_lunching,  $quality_btc,  $like_thing,  $channel_resource,  $channel_resource_other, $improve_thing, $time)";
       if (mysqli_query($conn, $sql)) {
             echo "New record created successfully";
       } else {
