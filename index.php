@@ -237,7 +237,6 @@ footer a .fa-lg {
         }
     
         $sql_select = "SELECT id FROM survey where token='".$token."'";
-        echo $sql_select;die;
         $result = $conn->query($sql_select);
         if ($result->num_rows > 0) { ?>
         <div class="row">
