@@ -13,6 +13,8 @@ function dd($data) {
       die;
 }
 
+dd($_POST);
+
 $conn = mysqli_connect($servername, $username, $password, $database);
 
 // Check connection
