@@ -398,7 +398,7 @@ footer a .fa-lg {
                     
                   <p class="paragraph-after">2. Anh/chị thích gì nhất trong sự kiện Hội làng FPT 2020?</p>
                   <div class="input-field input-field-textarea">
-                    <textarea id="textarea" class="materialize-textarea"></textarea>
+                    <textarea id="textarea" name="like_thing" class="materialize-textarea"></textarea>
                   </div>
                   <p class="paragraph-after">3. Anh/chị biết chương trình Hội làng FPT 2020 qua kênh nào?</p>
                   <div>
@@ -425,12 +425,12 @@ footer a .fa-lg {
                     <input name="channel-resource" type="radio" id="channel-resource5" value="5" />
                     <label for="channel-resource5">
                       <div class="input-field input-field-other">
-                        <input class="other" type="text" placeholder="Other">
+                        <input class="other" name="channel-resource-other" type="text" placeholder="Other">
                       </div>
                     </label>
                   <p class="paragraph-after">4. Theo anh/chị cần cải thiện những gì cho việc tổ chức Hội làng 2020 được tốt hơn?</p>
                   <div class="input-field input-field-textarea">
-                    <textarea id="textarea" class="materialize-textarea"></textarea>
+                    <textarea id="textarea" name="improve_thing" class="materialize-textarea"></textarea>
                   </div>
                 </div>
               </div>
