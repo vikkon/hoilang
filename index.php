@@ -287,9 +287,15 @@ footer a .fa-lg {
     <div class="row">
       <div class="ribbon"></div>
       <main>
+                <a href="http://myfsoftgame.com/exit" style="float: right;
+    top: -20px;
+    right: 16px;
+    width: 88px;
+    height: 35px;
+    text-align: center;
+    background-color: #ee6e73;" class="btn waves-effect waves-light">Quay lại/a>
         <div class="card-container">
             
-        <a href="http://myfsoftgame.com/exit" style="top: 15px;left: -96px; width: 88px;height: 35px;text-align: center;background-color: #ee6e73;" class="btn waves-effect waves-light">Hủy</a> 
           <div class="card-content card-panel col s12 m8 offset-m2">
             <form id="survey-form" action='submit.php'>
                 <input type="hidden" name="token" value="<?php echo $token; ?>" />
