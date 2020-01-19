@@ -49,20 +49,25 @@ if(isset($_POST['data'])) {
             
             $data['like_thing'] = preg_replace('/\s+/','',$data['like_thing']);
             if(isset($data['like_thing']) && $data['like_thing'] != '') {
-                  $like_thing = $data['like_thing'];
+                  $like_thing = "'".$data['like_thing']."'";
             } else {
                   $like_thing = 'null';
             }
             
             $channel_resource = isset($data['channel-resource']) ? $data['channel-resource'] : 'null';
-            
             if(isset($data['channel-resource-other']) && $data['channel-resource-other'] != '') {
-                  $channel_resource_other = $data['channel-resource-other'];
+                  $channel_resource_other = "'".$data['channel-resource-other']."'";
             } else {
                   $channel_resource_other = 'null';
             }
             
-            $improve_thing = isset($data['improve_thing']) && $data['improve_thing'] != '' ? $data['improve_thing'] : 'null';
+            
+            $improve_thing = isset($data['improve_thing']) ? $data['improve_thing'] : 'null';
+            if(isset($data['improve_thing']) && $data['improve_thing'] != '') {
+                  $improve_thing = "'".$data['improve_thing']."'";
+            } else {
+                  $improve_thing = 'null';
+            }
             
       } else { 
             return 0;
