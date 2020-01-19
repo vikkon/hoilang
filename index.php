@@ -293,7 +293,7 @@ footer a .fa-lg {
     width: 88px;
     height: 35px;
     text-align: center;
-    background-color: #ee6e73;" class="btn waves-effect waves-light">Quay lại/a>
+    background-color: #ee6e73;" class="btn waves-effect waves-light">Quay lại</a>
         <div class="card-container">
             
           <div class="card-content card-panel col s12 m8 offset-m2">
