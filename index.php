@@ -221,7 +221,7 @@ footer a .fa-lg {
   margin-right: 4px;
 }
         
-        textarea {
+        textarea, .other {
             font-size: 16px !important;
         }
 
