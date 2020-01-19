@@ -47,7 +47,7 @@ if(isset($_POST['data'])) {
             $quality_lunching = isset($data['quality-lunching']) ? $data['quality-lunching'] : 'null';
             $quality_btc = isset($data['quality-btc']) ? $data['quality-btc'] : 'null';
             
-            $data['like_thing'] = preg_replace('/\s+/','',$data['like_thing']);
+            $data['like_thing'] = trim($data['like_thing']);
             if(isset($data['like_thing']) && $data['like_thing'] != '') {
                   $like_thing = "'".$data['like_thing']."'";
             } else {
@@ -55,6 +55,8 @@ if(isset($_POST['data'])) {
             }
             
             $channel_resource = isset($data['channel-resource']) ? $data['channel-resource'] : 'null';
+            
+            $data['channel-resource-other'] = trim($data['channel-resource-other']);
             if(isset($data['channel-resource-other']) && $data['channel-resource-other'] != '') {
                   $channel_resource_other = "'".$data['channel-resource-other']."'";
             } else {
@@ -62,7 +64,7 @@ if(isset($_POST['data'])) {
             }
             
             
-            $improve_thing = isset($data['improve_thing']) ? $data['improve_thing'] : 'null';
+            $data['improve_thing'] = trim($data['improve_thing']);
             if(isset($data['improve_thing']) && $data['improve_thing'] != '') {
                   $improve_thing = "'".$data['improve_thing']."'";
             } else {
