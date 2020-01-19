@@ -21,7 +21,6 @@ if (!$conn) {
       die("Connection failed: " . mysqli_connect_error());
 }
  
-echo "Connected successfully";
 
 if(isset($_POST['data'])) {
       $data = unserialize($_POST['data']);
@@ -34,8 +33,10 @@ if(isset($_POST['data'])) {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
       }
       return 1;
+      die;
 } else {
       return 0;
+      die;
 }
 mysqli_close($conn);
 
