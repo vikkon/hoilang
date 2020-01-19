@@ -31,6 +31,14 @@
   font-weight: 400;
   line-height: 20px;
 }
+        
+        input, input:before, input:after {
+      -webkit-user-select: initial;
+      -khtml-user-select: initial;
+      -moz-user-select: initial;
+      -ms-user-select: initial;
+      user-select: initial;
+     } 
 
 .input-field input[type=text]:focus + label, .input-field input[type=number]:focus + label, .input-field input[type=email]:focus + label {
   color: #607D8B;
