@@ -274,7 +274,7 @@ footer a .fa-lg {
         <div class="card-container">
           <div class="card-content card-panel col s12 m8 offset-m2">
             <form id="survey-form" action='submit.php'>
-                <input type="hidden" name="token" value="<?php if(isset($_GET['token'])) { echo $_GET['token']; } else { echo '';} ?>" />
+                <input type="hidden" name="token" value="<?php echo $_GET['token']; ?>" />
               <div class="row">
                 <h1 id="title">ĐÁNH GIÁ CHẤT LƯỢNG HỘI LÀNG XUÂN CANH TÝ</h1>
                 <p id="description"><br>Anh/chị thân mến,<br>Rất mong anh chị dành chút thời gian để đánh giá chất lượng chương trình “Hội làng FPT Xuân Canh Tý 2020”Ý kiến đánh giá của Anh/chị sẽ giúp chúng tôi rất nhiều trong việc nâng cao chất lượng các chương trình sau này, đem lại cho anh/chị những giá trị tinh thần tốt nhất.<br>Xin chân thành cảm ơn!</p>
