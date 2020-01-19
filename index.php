@@ -216,7 +216,43 @@ footer a .fa-lg {
 </head>
 
 <body>
+
+    <?php
+        $servername = "localhost";
+        $database = "hoilang";
+        $username = "myfpt";
+        $password = "hoilang2020";
+
+        $conn = mysqli_connect($servername, $username, $password, $database);
+
+        // Check connection
+
+        if (!$conn) {
+              die("Eror 404");
+        }
     
+        $sql_select = "SELECT id FROM survey where token=".$token;
+        $result = $conn->query($sql_select);
+        if ($result->num_rows > 0) { ?>
+        <div class="row">
+      <div class="ribbon"></div>
+      <main>
+        <div class="card-container">
+          <div class="card-content card-panel col s12 m8 offset-m2">
+            <form>
+                <input type="hidden" name="token" value="<?php if(isset($_GET['token'])) { echo $_GET['token']; } else { echo '';} ?>" />
+              <div class="row">
+                <h1 id="title">CẢM ƠN CÁC ANH/CHỊ ĐÃ THAM GIA ĐÁNH GIÁ!</h1>
+                <p id="description">Chúng tôi sẽ gửi đến anh/chị kết quả sớm nhất!</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <?php
+        } else { 
+    ?>
     
     <div class="row">
       <div class="ribbon"></div>
@@ -443,9 +479,6 @@ footer a .fa-lg {
         </div>
       </main>
     </div>
-    <footer>
-      <a href="https://github.com/bomholtm/fcc" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-alt fa-lg"></i> bomholtm / fcc</a>
-    </footer>
     
     <script src="https://b0mh0lt.github.io/freeCodeCamp/_assets/js/jquery321.min.js"></script>
     <script src="https://b0mh0lt.github.io/freeCodeCamp/_assets/js/materialize0982.min.js"></script>
@@ -481,7 +514,7 @@ footer a .fa-lg {
     });
     </script>
     
-    
+    <?php } ?>
 </body>
 
 </html>
