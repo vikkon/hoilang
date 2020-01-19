@@ -462,7 +462,7 @@ footer a .fa-lg {
                     
                   <p class="paragraph-after">2. Anh/chị thích gì nhất trong sự kiện Hội làng FPT 2020?</p>
                   <div class="input-field input-field-textarea">
-                    <textarea id="textarea" name="like_thing" class="materialize-textarea"></textarea>
+                    <textarea id="textarea" name="like_thing" class="materialize-textarea drag_1700"></textarea>
                   </div>
                   <p class="paragraph-after">3. Anh/chị biết chương trình Hội làng FPT 2020 qua kênh nào?</p>
                   <div>
@@ -489,12 +489,12 @@ footer a .fa-lg {
                     <input name="channel-resource" type="radio" id="channel-resource5" value="5" />
                     <label for="channel-resource5">
                       <div class="input-field input-field-other">
-                        <input class="other" name="channel-resource-other" type="text" placeholder="Khác">
+                        <input class="other drag_1700" name="channel-resource-other" type="text" placeholder="Khác">
                       </div>
                     </label>
                   <p class="paragraph-after">4. Theo anh/chị cần cải thiện những gì cho việc tổ chức Hội làng 2020 được tốt hơn?</p>
                   <div class="input-field input-field-textarea">
-                    <textarea id="textarea" name="improve_thing" class="materialize-textarea"></textarea>
+                    <textarea id="textarea" name="improve_thing" class="materialize-textarea drag_1900"></textarea>
                   </div>
                 </div>
               </div>
@@ -518,9 +518,15 @@ footer a .fa-lg {
     $(function() {
         
         
-     $('input, textarea').on('focus', function(e) {
+     $('.drag_1700').on('focus', function(e) {
             e.preventDefault(); e.stopPropagation();
             window.scrollTo(0,1700); //the second 0 marks the Y scroll pos. Setting this to i.e. 100 will push the screen up by 100px. 
+        });
+        
+      
+     $('.drag_1900').on('focus', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            window.scrollTo(0,1900); //the second 0 marks the Y scroll pos. Setting this to i.e. 100 will push the screen up by 100px. 
         });
         
         var getUrlParameter = function getUrlParameter(sParam) {
