@@ -469,7 +469,7 @@ footer a .fa-lg {
             e.preventDefault();
             $('#survey-form').each(function(){
                 valuesToSend = $(this).serialize();
-                $.ajax($(this).attr('action'),
+                $.post($(this).attr('action'),
                     {
                     method: $(this).attr('method'),
                     data: valuesToSend
