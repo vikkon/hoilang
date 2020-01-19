@@ -218,6 +218,11 @@ footer a .fa-lg {
 <body>
 
     <?php
+        if(!isset($_GET['token'])) {
+            die('Closed');
+        }
+        $token = $_GET['token'];
+    
         $servername = "localhost";
         $database = "hoilang";
         $username = "myfpt";
