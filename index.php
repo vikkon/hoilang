@@ -457,7 +457,7 @@ footer a .fa-lg {
                     
                   <p class="paragraph-after">2. Anh/chị thích gì nhất trong sự kiện Hội làng FPT 2020?</p>
                   <div class="input-field input-field-textarea">
-                    <textarea id="textarea" name="like_thing" style="height:6rem"></textarea>
+                    <textarea id="textarea" name="like_thing" class="materialize-textarea"></textarea>
                   </div>
                   <p class="paragraph-after">3. Anh/chị biết chương trình Hội làng FPT 2020 qua kênh nào?</p>
                   <div>
@@ -489,7 +489,7 @@ footer a .fa-lg {
                     </label>
                   <p class="paragraph-after">4. Theo anh/chị cần cải thiện những gì cho việc tổ chức Hội làng 2020 được tốt hơn?</p>
                   <div class="input-field input-field-textarea">
-                    <textarea id="textarea" name="improve_thing"  style="height:6rem"></textarea>
+                    <textarea id="textarea" name="improve_thing" class="materialize-textarea"></textarea>
                   </div>
                 </div>
               </div>
