@@ -518,11 +518,11 @@ footer a .fa-lg {
                     method: $(this).attr('method'),
                     data: valuesToSend
                     }
-                ).done(function() {
-                    alert( "second success" );
+                ).done(function(data) {
+                    alert(data);
                   })
-                  .fail(function() {
-                    alert( "error" );
+                  .fail(function(data) {
+                    alert(data);
                   })
             });
         });
