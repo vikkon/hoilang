@@ -258,6 +258,7 @@ footer a .fa-lg {
                 <h1 id="title">CẢM ƠN CÁC ANH/CHỊ ĐÃ THAM GIA ĐÁNH GIÁ!</h1>
                 <p id="description"><br>Chúng tôi sẽ gửi đến anh/chị phần quà của chương trình trong thời gian sớm nhất!</p>
      
+                <p id="description"><br><br>Sự đóng góp của các anh/chị sẽ giúp chúng tôi cải thiện và sẽ đưa ra những chương trình có chất lượng tốt hơn nữa trong thời gian tới.</p>
               </div>
             </form>
           </div>
