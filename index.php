@@ -223,6 +223,14 @@ footer a .fa-lg {
         }
         $token = $_GET['token'];
     
+        list($header, $payload, $signature) = explode (".", $token);
+        $token = json_decode(base64_decode($payload));
+        $token = $token->email;
+    
+        if($token == '' || $token == null)  {
+            die('Closed');
+        }
+    
         $servername = "localhost";
         $database = "hoilang";
         $username = "myfpt";
@@ -245,7 +253,7 @@ footer a .fa-lg {
         <div class="card-container">
           <div class="card-content card-panel col s12 m8 offset-m2">
             <form>
-                <input type="hidden" name="token" value="<?php if(isset($_GET['token'])) { echo $_GET['token']; } else { echo '';} ?>" />
+                <input type="hidden" name="token" value="<?php echo $_GET['token']; ?>" />
               <div class="row">
                 <h1 id="title">CẢM ƠN CÁC ANH/CHỊ ĐÃ THAM GIA ĐÁNH GIÁ!</h1>
                 <p id="description">Chúng tôi sẽ gửi đến anh/chị kết quả sớm nhất!</p>
