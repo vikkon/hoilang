@@ -25,9 +25,18 @@ if (!$conn) {
 if(isset($_POST['data'])) {
       $data = [];
       parse_str($_POST['data'], $data);
-      dd($data);
       
-      $sql = "INSERT INTO survey (token, data) VALUES ('Thom', 'Vial')";
+      if(isset($data['token']) && $data['token'] != '') {
+            $token = $data['token'];
+            unset($data['token']);
+            $data = json_encode($data);
+            $time = time();
+      } else { 
+            return 0;
+            die;
+      }
+      
+      $sql = "INSERT INTO survey (token, data, created_at) VALUES ($token, $data, $time)";
       if (mysqli_query($conn, $sql)) {
             echo "New record created successfully";
       } else {
