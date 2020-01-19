@@ -527,7 +527,7 @@ footer a .fa-lg {
         
         $("#closeBtn").click(function(e){
             e.preventDefault();
-            window.top.close();
+            window.open('', '_self', '').close();
         });
     });
     </script>
