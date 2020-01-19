@@ -220,6 +220,10 @@ footer a .fa-lg {
   vertical-align: text-top;
   margin-right: 4px;
 }
+        
+        textarea {
+            font-size: 16px !important;
+        }
 
     </style>
 </head>
