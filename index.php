@@ -278,7 +278,7 @@ footer a .fa-lg {
                 <input type="hidden" name="token" value="<?php echo $token; ?>" />
               <div class="row">
                 <h1 id="title">ĐÁNH GIÁ CHẤT LƯỢNG HỘI LÀNG XUÂN CANH TÝ</h1>
-                <p id="description"><br>Anh/chị thân mến,<br>Rất mong anh chị dành chút thời gian để đánh giá chất lượng chương trình “Hội làng FPT Xuân Canh Tý 2020”Ý kiến đánh giá của Anh/chị sẽ giúp chúng tôi rất nhiều trong việc nâng cao chất lượng các chương trình sau này, đem lại cho anh/chị những giá trị tinh thần tốt nhất.<br>Xin chân thành cảm ơn!</p>
+                <p id="description"><br>Anh/chị thân mến,<br>Rất mong anh chị dành chút thời gian để đánh giá chất lượng chương trình “Hội làng FPT Xuân Canh Tý 2020”. Ý kiến đánh giá của Anh/chị sẽ giúp chúng tôi rất nhiều trong việc nâng cao chất lượng các chương trình sau này, đem lại cho anh/chị những giá trị tinh thần tốt nhất.<br>Xin chân thành cảm ơn!</p>
               </div>
               <div class="row">
                 <h5>Survey Questions</h5>
@@ -476,7 +476,7 @@ footer a .fa-lg {
                     <input name="channel-resource" type="radio" id="channel-resource5" value="5" />
                     <label for="channel-resource5">
                       <div class="input-field input-field-other">
-                        <input class="other" name="channel-resource-other" type="text" placeholder="Other">
+                        <input class="other" name="channel-resource-other" type="text" placeholder="Khác">
                       </div>
                     </label>
                   <p class="paragraph-after">4. Theo anh/chị cần cải thiện những gì cho việc tổ chức Hội làng 2020 được tốt hơn?</p>
