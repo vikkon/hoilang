@@ -251,7 +251,7 @@ footer a .fa-lg {
                 <p id="description">Chúng tôi sẽ gửi đến anh/chị kết quả sớm nhất!</p>
                   
               <div class="row">
-                  <a id="closeBtn" href="javascript:window.open('','_self').close();" class="btn waves-effect waves-light" name="action">Quay lại</a>
+                  <button id="closeBtn" class="btn waves-effect waves-light" name="action">Quay lại</button>
                 </div>
               </div>
             </form>
@@ -489,6 +489,10 @@ footer a .fa-lg {
       </main>
     </div>
     
+    
+    
+    <?php } ?>
+    
     <script src="https://b0mh0lt.github.io/freeCodeCamp/_assets/js/jquery321.min.js"></script>
     <script src="https://b0mh0lt.github.io/freeCodeCamp/_assets/js/materialize0982.min.js"></script>
     <script>
@@ -520,10 +524,13 @@ footer a .fa-lg {
                 )
             });
         });
+        
+        $("#closeBtn").click(function(e){
+            e.preventDefault();
+            window.top.close();
+        });
     });
     </script>
-    
-    <?php } ?>
 </body>
 
 </html>
