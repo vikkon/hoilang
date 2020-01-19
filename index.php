@@ -323,7 +323,7 @@ footer a .fa-lg {
                     <input name="overall" type="radio" id="overall0" value="0" />
                     <label for="overall0">Kém</label>
                   </div>
-                    
+                     
                     
                   <p>b. Chất lượng các gian hàng:</p>
                   <div>
