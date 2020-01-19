@@ -13,7 +13,7 @@ function dd($data) {
       die;
 }
 
-dd($_POST);
+dd(unserialize($_POST['data']));
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
