@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $database = "hoilang";
-$username = "root";
-$password = "vietanh124";
+$username = "myfpt";
+$password = "hoilang2020";
 
 // Create connection
 
