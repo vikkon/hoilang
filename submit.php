@@ -38,17 +38,17 @@ if(isset($_POST['data'])) {
             unset($data['token']);
             $time = time();
             
-            $overall = isset($data['overall']) ? $data['overall'] : '';
-            $quality_store = isset($data['quality-store']) ? $data['quality-store'] : '';
-            $quality_stage = isset($data['quality-stage']) ? $data['quality-stage'] : '';
-            $space_stage = isset($data['space-stage']) ? $data['space-stage'] : '';
-            $duration_program = isset($data['duration-program']) ? $data['duration-program'] : '';
-            $quality_lunching = isset($data['quality-lunching']) ? $data['quality-lunching'] : '';
-            $quality_btc = isset($data['quality-btc']) ? $data['quality-btc'] : '';
-            $like_thing = isset($data['like_thing']) ? $data['like_thing'] : '';
-            $channel_resource = isset($data['channel-resource']) ? $data['channel-resource'] : '';
-            $channel_resource_other = isset($data['channel-resource-other']) ? $data['channel-resource-other'] : '';
-            $improve_thing = isset($data['improve_thing']) ? $data['improve_thing'] : '';
+            $overall = isset($data['overall']) ? $data['overall'] : 'null';
+            $quality_store = isset($data['quality-store']) ? $data['quality-store'] : 'null';
+            $quality_stage = isset($data['quality-stage']) ? $data['quality-stage'] : 'null';
+            $space_stage = isset($data['space-stage']) ? $data['space-stage'] : 'null';
+            $duration_program = isset($data['duration-program']) ? $data['duration-program'] : 'null';
+            $quality_lunching = isset($data['quality-lunching']) ? $data['quality-lunching'] : 'null';
+            $quality_btc = isset($data['quality-btc']) ? $data['quality-btc'] : 'null';
+            $like_thing = isset($data['like_thing']) ? $data['like_thing'] : 'null';
+            $channel_resource = isset($data['channel-resource']) ? $data['channel-resource'] : 'null';
+            $channel_resource_other = isset($data['channel-resource-other']) ? $data['channel-resource-other'] : 'null';
+            $improve_thing = isset($data['improve_thing']) ? $data['improve_thing'] : 'null';
             
       } else { 
             return 0;
