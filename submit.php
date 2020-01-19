@@ -61,7 +61,7 @@ if(isset($_POST['data'])) {
             return 1;
             die;
       } else {
-            echo "Error 404";
+            echo "Error 404".mysqli_error($conn);
             return 1;
             die;
       }
