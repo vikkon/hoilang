@@ -29,7 +29,7 @@ if(isset($_POST['data'])) {
       if(isset($data['token']) && $data['token'] != '') {
             $token = $data['token'];
             unset($data['token']);
-            $data = json_encode($data);
+            $data = serialize($data);
             $time = time();
       } else { 
             return 0;
