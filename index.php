@@ -447,8 +447,8 @@ footer a .fa-lg {
       <a href="https://github.com/bomholtm/fcc" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-alt fa-lg"></i> bomholtm / fcc</a>
     </footer>
     
-    <script src="https://b0mh0lt.github.io/freeCodeCamp/_assets/js/jquery321.min.js" async></script>
-    <script src="https://b0mh0lt.github.io/freeCodeCamp/_assets/js/materialize0982.min.js" async></script>
+    <script src="https://b0mh0lt.github.io/freeCodeCamp/_assets/js/jquery321.min.js"></script>
+    <script src="https://b0mh0lt.github.io/freeCodeCamp/_assets/js/materialize0982.min.js"></script>
     <script>
     $(function() {
         var getUrlParameter = function getUrlParameter(sParam) {
