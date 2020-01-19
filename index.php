@@ -256,7 +256,7 @@ footer a .fa-lg {
                 <input type="hidden" name="token" value="<?php echo $_GET['token']; ?>" />
               <div class="row">
                 <h1 id="title">CẢM ƠN CÁC ANH/CHỊ ĐÃ THAM GIA ĐÁNH GIÁ!</h1>
-                <p id="description">Chúng tôi sẽ gửi đến anh/chị kết quả sớm nhất!</p>
+                <p id="description"><br>Chúng tôi sẽ gửi đến anh/chị phần quà của chương trình trong thời gian sớm nhất!</p>
      
               </div>
             </form>
