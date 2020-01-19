@@ -45,10 +45,10 @@ if(isset($_POST['data'])) {
             $duration_program = isset($data['duration-program']) ? $data['duration-program'] : 'null';
             $quality_lunching = isset($data['quality-lunching']) ? $data['quality-lunching'] : 'null';
             $quality_btc = isset($data['quality-btc']) ? $data['quality-btc'] : 'null';
-            $like_thing = isset($data['like_thing']) ? $data['like_thing'] : 'null';
+            $like_thing = isset($data['like_thing']) && $data['like_thing'] != '' ? $data['like_thing'] : 'null';
             $channel_resource = isset($data['channel-resource']) ? $data['channel-resource'] : 'null';
-            $channel_resource_other = isset($data['channel-resource-other']) ? $data['channel-resource-other'] : 'null';
-            $improve_thing = isset($data['improve_thing']) ? $data['improve_thing'] : 'null';
+            $channel_resource_other = isset($data['channel-resource-other']) && $data['channel-resource-other'] != '' ? $data['channel-resource-other'] : 'null';
+            $improve_thing = isset($data['improve_thing']) && $data['improve_thing'] != '' ? $data['improve_thing'] : 'null';
             
       } else { 
             return 0;
