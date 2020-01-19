@@ -13,8 +13,6 @@ function dd($data) {
       die;
 }
 
-dd(unserialize($_POST['data']));
-
 $conn = mysqli_connect($servername, $username, $password, $database);
 
 // Check connection
@@ -25,7 +23,8 @@ if (!$conn) {
  
 
 if(isset($_POST['data'])) {
-      $data = unserialize($_POST['data']);
+      $data = [];
+      parse_str($_POST['data'], $data);
       dd($data);
       
       $sql = "INSERT INTO survey (token, data) VALUES ('Thom', 'Vial')";
