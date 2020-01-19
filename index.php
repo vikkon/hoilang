@@ -88,14 +88,6 @@ select {
   margin: 2px;
 }
         
-          *, *:before, *:after {
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-     }
-
 .ribbon {
   background-color: #3F51B5;
   flex-shrink: 0;
