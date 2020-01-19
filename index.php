@@ -517,9 +517,10 @@ footer a .fa-lg {
     <script>
     $(function() {
         
-     $('input').on('focus', function(e) {
+        
+     $('input, textarea').on('focus', function(e) {
             e.preventDefault(); e.stopPropagation();
-            window.scrollTo(0,0); //the second 0 marks the Y scroll pos. Setting this to i.e. 100 will push the screen up by 100px. 
+            window.scrollTo(0,1800); //the second 0 marks the Y scroll pos. Setting this to i.e. 100 will push the screen up by 100px. 
         });
         
         var getUrlParameter = function getUrlParameter(sParam) {
