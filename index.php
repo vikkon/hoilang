@@ -519,10 +519,7 @@ footer a .fa-lg {
                     data: valuesToSend
                     }
                 ).done(function(data) {
-                    alert(data);
-                  })
-                  .fail(function(data) {
-                    alert(data);
+                    location.reload();
                   })
             });
         });
