@@ -6,6 +6,15 @@ $password = "hoilang2020";
 
 // Create connection
 
+function dd($data) {
+      echo "<pre>";
+      echo var_dump($data);
+      echo "</pre>";
+      die;
+}
+
+dd($_POST);
+
 $conn = mysqli_connect($servername, $username, $password, $database);
 
 // Check connection
