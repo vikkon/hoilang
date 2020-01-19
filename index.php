@@ -236,7 +236,7 @@ footer a .fa-lg {
               die("Eror 404");
         }
     
-        $sql_select = "SELECT id FROM survey where token=".$token;
+        $sql_select = "SELECT id FROM survey where token='".$token."'";
         echo $sql_select;die;
         $result = $conn->query($sql_select);
         if ($result->num_rows > 0) { ?>
