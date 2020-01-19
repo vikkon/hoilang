@@ -517,6 +517,9 @@ footer a .fa-lg {
                     {
                     method: $(this).attr('method'),
                     data: valuesToSend
+                    },
+                    success: function() {   
+                        location.reload();  
                     }
                 )
             });
