@@ -272,6 +272,8 @@ footer a .fa-lg {
                 <p id="description"><br>Chúng tôi sẽ gửi đến anh/chị phần quà của chương trình trong thời gian sớm nhất!</p>
      
                 <p id="description"><br>Sự đóng góp của các anh/chị sẽ giúp chúng tôi cải thiện và sẽ đưa ra những chương trình có chất lượng tốt hơn nữa trong thời gian tới.</p>
+                  
+                  <a href="http://myfsoftgame.com/exit" style="top: 15px;" class="btn waves-effect waves-lighten-5">Quay lại</a> 
               </div>
             </form>
           </div>
