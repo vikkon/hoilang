@@ -249,6 +249,10 @@ footer a .fa-lg {
               <div class="row">
                 <h1 id="title">CẢM ƠN CÁC ANH/CHỊ ĐÃ THAM GIA ĐÁNH GIÁ!</h1>
                 <p id="description">Chúng tôi sẽ gửi đến anh/chị kết quả sớm nhất!</p>
+                  
+              <div class="row">
+                  <a id="closeBtn" href="javascript:window.open('','_self').close();" class="btn waves-effect waves-light" name="action">Quay lại</a>
+                </div>
               </div>
             </form>
           </div>
