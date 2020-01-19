@@ -29,15 +29,26 @@ if(isset($_POST['data'])) {
       if(isset($data['token']) && $data['token'] != '') {
             $token = $data['token'];
             unset($data['token']);
-            dd($data);
-            $data = serialize($data);
             $time = time();
+            
+            $overall = isset($data['overall']) ? $data['overall'] : '';
+            $quality_store = isset($data['quality-store']) ? $data['quality-store'] : '';
+            $quality_stage = isset($data['quality-stage']) ? $data['quality-stage'] : '';
+            $space_stage = isset($data['space-stage']) ? $data['space-stage'] : '';
+            $duration_program = isset($data['duration-program']) ? $data['duration-program'] : '';
+            $quality_lunching = isset($data['quality-lunching']) ? $data['quality-lunching'] : '';
+            $like_thing = isset($data['like_thing']) ? $data['like_thing'] : '';
+            $channel_resource = isset($data['channel-resource']) ? $data['channel-resource'] : '';
+            $channel_resource_other = isset($data['channel-resource-other']) ? $data['channel-resource-other'] : '';
+            $improve_thing = isset($data['improve_thing']) ? $data['improve_thing'] : '';
+            
       } else { 
             return 0;
             die;
       }
       
-      $sql = "INSERT INTO survey (token, data, created_at) VALUES ($token, $data, $time)";
+      $sql = "INSERT INTO survey (token, quality-store, quality-stage, space-stage, duration-program, quality-lunching, like_thing, channel-resource, channel-resource-other, improve_thing, created_at) 
+                        VALUES ($token, $quality_store, $quality_stage,  $space_stage,  $duration_program,  $quality_lunching,  $like_thing,  $channel_resource,  $channel_resource_other, $improve_thing, $time)";
       if (mysqli_query($conn, $sql)) {
             echo "New record created successfully";
       } else {
