@@ -18,7 +18,7 @@ $conn = mysqli_connect($servername, $username, $password, $database);
 // Check connection
 
 if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
+      die("Error 404");
 }
  
 
@@ -29,7 +29,7 @@ if(isset($_POST['data'])) {
       if(isset($data['token']) && $data['token'] != '') {
             $token = $data['token'];
             $sql_select = "SELECT id FROM survey where token=".$token;
-            $result = $conn->query($sql);
+            $result = $conn->query($sql_select);
             if ($result->num_rows > 0) {
                   return 3;
                   die;
@@ -58,9 +58,12 @@ if(isset($_POST['data'])) {
       $sql = "INSERT INTO survey (token, overall, qualityStore, qualityStage, spaceStage, durationProgram, qualityLunching, qualityBtc, likeThing, channelResource, channelResourceOther, improveThing, created_at) 
                         VALUES ($token, $overall, $quality_store, $quality_stage,  $space_stage,  $duration_program,  $quality_lunching,  $quality_btc,  $like_thing,  $channel_resource,  $channel_resource_other, $improve_thing, $time)";
       if (mysqli_query($conn, $sql)) {
-            echo "New record created successfully";
+            return 1;
+            die;
       } else {
-            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            echo "Error 404";
+            return 1;
+            die;
       }
       return 1;
       die;
