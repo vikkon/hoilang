@@ -512,6 +512,16 @@ footer a .fa-lg {
     <script src="https://b0mh0lt.github.io/freeCodeCamp/_assets/js/materialize0982.min.js"></script>
     <script>
     $(function() {
+        
+     document.ontouchmove = function(e){
+          e.preventDefault();
+      }
+        
+        input.onfocus = function () {
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+}
+        
         var getUrlParameter = function getUrlParameter(sParam) {
         var sPageURL = window.location.search.substring(1),
             sURLVariables = sPageURL.split('&'),
