@@ -28,7 +28,7 @@ if(isset($_POST['data'])) {
       
       if(isset($data['token']) && $data['token'] != '') {
             $token = $data['token'];
-            $sql_select = "SELECT id FROM survey where token=`".$token.'`';
+            $sql_select = "SELECT id FROM survey where token=".$token;
             $result = $conn->query($sql_select);
             if ($result->num_rows > 0) {
                   return 3;
