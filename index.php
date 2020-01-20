@@ -477,23 +477,23 @@ footer a .fa-lg {
                   <p class="paragraph-after">3. Anh/chị biết chương trình Hội làng FPT 2020 qua kênh nào?</p>
                   <div>
                     <input name="channel-resource" type="radio" id="channel-resource0" value="0" />
-                    <label for="channel-resource0">Udacity</label>
+                    <label for="channel-resource0">Bản tin qua email</label>
                   </div>
                   <div>
                     <input name="channel-resource" type="radio" id="channel-resource1" value="1" />
-                    <label for="channel-resource1">Udemy</label>
+                    <label for="channel-resource1">Fanpage fb Fun4Fun</label>
                   </div>
                   <div>
                     <input name="channel-resource" type="radio" id="channel-resource2" value="2" />
-                    <label for="channel-resource2">Code Wars</label>
+                    <label for="channel-resource2">Bạn bè, người thân, đồng nghiệp</label>
                   </div>
                   <div>
                     <input name="channel-resource" type="radio" id="channel-resource3" value="3" />
-                    <label for="channel-resource3">The Odin Project</label>
+                    <label for="channel-resource3">Báo mạng nội bộ Chungta.vn</label>
                   </div>
                   <div>
                     <input name="channel-resource" type="radio" id="channel-resource4" value="4" />
-                    <label for="channel-resource4">DevTips</label>
+                    <label for="channel-resource4">Băng rôn, poster, Standee</label>
                   </div>
                   <div>
                     <input name="channel-resource" type="radio" id="channel-resource5" value="5" />
