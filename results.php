@@ -1,19 +1,6 @@
 <html>
 <body>
 <?php
-      if(!isset($_GET['token'])) {
-          die('Closed');
-      }
-      $token = $_GET['token'];
-
-      list($header, $payload, $signature) = explode (".", $token);
-      $token = json_decode(base64_decode($payload));
-      $token = $token->email;
-
-      if($token == '' || $token == null)  {
-          die('Closed');
-      }
-
       $servername = "localhost";
       $database = "hoilang";
       $username = "myfpt";
