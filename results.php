@@ -66,7 +66,7 @@
                     <td>'.$field9name.'</td> 
                     <td>'.$field11name.'</td> 
                     <td>'.$field12name.'</td> 
-                    <td>'.date('m/d/Y', $field13name).'</td> 
+                    <td>'.date('m/d/Y H:i:s', $field13name).'</td> 
                 </tr>';
         }
         $result->free();
