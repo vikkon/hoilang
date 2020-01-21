@@ -25,6 +25,7 @@
           <td> <font face="Arial">qualityStage</font> </td> 
           <td> <font face="Arial">spaceStage</font> </td> 
           <td> <font face="Arial">durationProgram</font> </td> 
+          <td> <font face="Arial">qualityLunching</font> </td> 
           <td> <font face="Arial">qualityBtc</font> </td> 
           <td> <font face="Arial">likeThing</font> </td> 
           <td> <font face="Arial">channelResourceOther</font> </td> 
@@ -48,8 +49,9 @@
           $field5name = $score[$row["qualityStage"]]; 
           $field6name = $score[$row["spaceStage"]]; 
           $field7name = $score[$row["durationProgram"]]; 
-          $field8name = $score[$row["qualityBtc"]]; 
-          $field9name = $row["likeThing"]; 
+          $field8name = $score[$row["qualityLunching"]]; 
+          $field9name = $score[$row["qualityBtc"]]; 
+          $field10name = $row["likeThing"]; 
           $field11name = $row["channelResourceOther"]; 
           $field12name = $row["improveThing"]; 
           $field13name = $row["created_at"]; 
@@ -64,6 +66,7 @@
                     <td>'.$field7name.'</td> 
                     <td>'.$field8name.'</td> 
                     <td>'.$field9name.'</td> 
+                    <td>'.$field10name.'</td> 
                     <td>'.$field11name.'</td> 
                     <td>'.$field12name.'</td> 
                     <td>'.date('m/d/Y H:i:s', $field13name).'</td> 
