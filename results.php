@@ -27,24 +27,29 @@
           <td> <font face="Arial">durationProgram</font> </td> 
           <td> <font face="Arial">qualityBtc</font> </td> 
           <td> <font face="Arial">likeThing</font> </td> 
-          <td> <font face="Arial">channelResource</font> </td> 
           <td> <font face="Arial">channelResourceOther</font> </td> 
           <td> <font face="Arial">improveThing</font> </td> 
           <td> <font face="Arial">created_at</font> </td> 
       </tr>';
       
+      $score = [];
+      $score[4] = 'Xuất sắc';
+      $score[3] = 'Tốt';
+      $score[2] = 'Khá';
+      $score[1] = 'Trung Bình';
+      $score[0] = 'Kém';
+      
       if ($result = $conn->query($sql_select)) {
         while ($row = $result->fetch_assoc()) {
           $field1name = $row["id"];
           $field2name = $row["token"];
-          $field3name = $row["overall"];
-          $field4name = $row["qualityStore"];
-          $field5name = $row["qualityStage"]; 
-          $field6name = $row["spaceStage"]; 
-          $field7name = $row["durationProgram"]; 
-          $field8name = $row["qualityBtc"]; 
+          $field3name = $score[$row["overall"]];
+          $field4name = $score[$row["qualityStore"]];
+          $field5name = $score[$row["qualityStage"]]; 
+          $field6name = $score[$row["spaceStage"]]; 
+          $field7name = $score[$row["durationProgram"]]; 
+          $field8name = $score[$row["qualityBtc"]]; 
           $field9name = $row["likeThing"]; 
-          $field10name = $row["channelResource"]; 
           $field11name = $row["channelResourceOther"]; 
           $field12name = $row["improveThing"]; 
           $field13name = $row["created_at"]; 
