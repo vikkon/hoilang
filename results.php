@@ -16,7 +16,7 @@
 
       $sql_select = "SELECT * FROM survey";
       
-      echo '<table border="0" cellspacing="2" cellpadding="2"> 
+      echo '<table> 
       <tr> 
           <td> <font face="Arial">id</font> </td> 
           <td> <font face="Arial">token</font> </td> 
@@ -64,10 +64,9 @@
                     <td>'.$field7name.'</td> 
                     <td>'.$field8name.'</td> 
                     <td>'.$field9name.'</td> 
-                    <td>'.$field10name.'</td> 
                     <td>'.$field11name.'</td> 
                     <td>'.$field12name.'</td> 
-                    <td>'.$field13name.'</td> 
+                    <td>'.date('m/d/Y', $field13name).'</td> 
                 </tr>';
         }
         $result->free();
